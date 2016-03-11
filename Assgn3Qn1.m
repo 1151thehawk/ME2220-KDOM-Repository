@@ -47,8 +47,8 @@ for theta2=0:360
     theta4dotdot=K(2);
     
     za=(12-1.5*cot(theta2*pi/180))/(-((cot(theta4))*sin(theta2*pi/180))+cos(theta2*pi/180));
-    p=-(1.5*cot(theta2*pi/180)+za*cos(theta2*pi/180))*0.001;
-    q=-(1.5+za*sin(theta2*pi/180))*0.001;
+    p=-(1.5*cot(theta2*pi/180)+za*cos(theta2*pi/180))*0.01;
+    q=-(1.5+za*sin(theta2*pi/180))*0.01;
     T3(end+1)=theta3*180/pi;
     T4(end+1)=theta4*180/pi;
     T3D(end+1)=theta3dot*60/(2*pi);
